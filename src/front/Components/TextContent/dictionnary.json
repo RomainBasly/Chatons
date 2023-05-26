@@ -1,0 +1,50 @@
+{
+  "pages": {
+    "signalement": {
+      "title": "A lire avant d'effectuer un signalement de chat",
+      "content": "Cette page sert à signaler les chats en situation de détresse (gravement malades ou blessés) pour une prise en charge éventuelle de la part d'associations de votre quartier. De la qualité des informations que vous transmettrez dépendra la survie du chat que vous signalez. Les chats suivants sont concernés:- les chats gravements blessés - Les chats en mauvaise santé et dont la vie est en danger: Par exemple: les chats sales, chats qui saignent, chats avec un membre cassé, chats immobiles, chats qui bavent, chats qui ont du mal à respirer. - les chats qui ont été déclarés perdus par leur propriétaire; - les chattes qui viennent de mettre bas dans la nature ou la présence de chatons sur la voie publique dont vous êtes certains qu'ils n'ont pas de foyer;",
+      "fakeContent": "iLorem ipsum dolor sit amet consectetur adipisicing elit. Vero ullam saepe libero modi quod quibusdam. Ratione repellat laboriosam in eius laborum natus doloremque excepturi similique quia? Nesciunt, dolore cumque! Architecto?",
+      "certify": "Vous certifiez en créant un formulaire que: ",
+      "condition1": "",
+      "condition2": "",
+      "condition3": "",
+      "condition4": "",
+      "condition5": "",
+      "condition6": "",
+      "textButton": "Signaler un  chat en danger"
+    },
+    "form": {
+      "title": "Effectuer un signalement de chat",
+      "catSituation": "Pour quelle(s) raison(s) souhaitez-vous efectuer un signalement de chat?",
+      "catSituationLabels": [
+        { "id": 1, "shortLabel": "sale", "longLabel": "Le chat est sale" },
+        { "id": 2, "shortLabel": "blessé", "longLabel": "Le chat est blessé" },
+        {
+          "id": 3,
+          "shortLabel": "respiration",
+          "longLabel": "Le chat a du mal à respirer"
+        },
+        {
+          "id": 4,
+          "shortLabel": "immobile",
+          "longLabel": "Le chat est immobile"
+        },
+        {
+          "id": 5,
+          "shortLabel": "aide",
+          "longLabel": "Le chat miaule pour appeler à l'aide"
+        },
+        {
+          "id": 6,
+          "shortLabel": "gestante",
+          "longLabel": "La chatte est gestante"
+        },
+        {
+          "id": 7,
+          "shortLabel": "chatons",
+          "longLabel": "Il s'agit de chatons de quelques jours, quelques semaines"
+        }
+      ]
+    }
+  }
+}
