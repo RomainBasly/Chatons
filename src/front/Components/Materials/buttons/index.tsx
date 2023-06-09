@@ -16,7 +16,7 @@ type IProps = {
   fullwidth?: boolean;
   disabled?: boolean;
   icon?: string;
-  variant?: "connect" | "submit" | "continue" | "back";
+  variant?: EButtonVariant;
   color?: "main" | "neutral" | "disabled";
   size?: "medium" | "large" | "small" | "xsmall";
   startIcon?: React.ReactNode;

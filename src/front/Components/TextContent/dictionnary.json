@@ -1,17 +1,35 @@
 {
+  "common": {
+    "buttons": {
+      "suivant": "Suivant",
+      "retour": "Retour"
+    }
+  },
   "pages": {
-    "signalement": {
-      "title": "A lire avant d'effectuer un signalement de chat",
+    "signalementIntro": {
+      "title": "Signaler un chat",
+      "subtitle": "A lire avant d'effectuer un signalement de chat",
       "content": "Cette page sert à signaler les chats en situation de détresse (gravement malades ou blessés) pour une prise en charge éventuelle de la part d'associations de votre quartier. De la qualité des informations que vous transmettrez dépendra la survie du chat que vous signalez. Les chats suivants sont concernés:- les chats gravements blessés - Les chats en mauvaise santé et dont la vie est en danger: Par exemple: les chats sales, chats qui saignent, chats avec un membre cassé, chats immobiles, chats qui bavent, chats qui ont du mal à respirer. - les chats qui ont été déclarés perdus par leur propriétaire; - les chattes qui viennent de mettre bas dans la nature ou la présence de chatons sur la voie publique dont vous êtes certains qu'ils n'ont pas de foyer;",
       "fakeContent": "iLorem ipsum dolor sit amet consectetur adipisicing elit. Vero ullam saepe libero modi quod quibusdam. Ratione repellat laboriosam in eius laborum natus doloremque excepturi similique quia? Nesciunt, dolore cumque! Architecto?",
       "certify": "Vous certifiez en créant un formulaire que: ",
-      "condition1": "",
-      "condition2": "",
-      "condition3": "",
-      "condition4": "",
-      "condition5": "",
-      "condition6": "",
-      "textButton": "Signaler un  chat en danger"
+      "prérequis": "Pour effectuer un signalement, il vous faudra: ",
+      "indications": [
+        {
+          "id": 1,
+          "indication": "Indiquer précisément sa localisation du chat"
+        },
+        {
+          "id": 2,
+          "indication": "Connaitre l'heure précise de votre rencontre avec lui"
+        },
+        {
+          "id": 3,
+          "indication": "Donner des informations les plus précises possibles à propos de ce chat"
+        }
+      ],
+      "common": {
+        "suivant": "Suivant"
+      }
     },
     "form": {
       "title": "Effectuer un signalement de chat",

@@ -1,7 +1,54 @@
 .root {
-    border-radius: 8px;
-    border: none;
-    cursor: pointer;
-    background-color: inherit;
-    text-decoration: underline #d9d8d7;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+  background-color: inherit;
+  //min-width: 200px;
+  margin: 8px;
+
+  &[variant="primary"] {
+    background-color: #356c99;
+    color: white;
+    padding: 16px 14px;
+
+    &:hover {
+      background-color: #0e6dac;
+      color: white;
+    }
+  }
+  &[variant="secondary"] {
+    border: 1px solid #d9d8d7;
+    padding: 16px 14px;
+
+    &:hover {
+      background-color: #f9f7f5;
+    }
+  }
+
+  &[size="large"] {
+    height: 40px;
+    font-size: 16px;
+    line-height: 17px;
+    padding: 8px 12px;
+  }
+  &[size="medium"] {
+    height: 40px;
+    font-size: 16px;
+    line-height: 17px;
+    padding: 8px 12px;
+  }
+  &[size="small"] {
+    height: 36px;
+    font-size: 14px;
+    line-height: 24px;
+    padding: 6px 12px;
+  }
+
+  &[size="xsmall"] {
+    border: 1px solid red;
+    height: 32px;
+    font-size: 14px;
+    line-height: 24px;
+    padding: 4px 10px;
+  }
 }

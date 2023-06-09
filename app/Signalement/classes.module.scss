@@ -1,7 +1,13 @@
 .roota {
   display: flex;
-  justify-content: center;
-  .contenta {
+  flex-direction: column;
+
+  .content {
     max-width: 850px;
+  }
+
+  .buttons-container {
+    display: flex;
+    justify-content: center;
   }
 }

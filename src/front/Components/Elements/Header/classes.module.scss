@@ -1,33 +1,32 @@
 .root {
-    width: 100%;
-    height: 100px;
-    padding-left: 50px ;
-    //border-bottom: 1px solid var(--color-neutral-200);
-    border-bottom: 1px solid #d9d8d7;
+  width: 100%;
+  height: 100px;
+  padding-left: 50px;
+  //border-bottom: 1px solid var(--color-neutral-200);
+  border-bottom: 1px solid #d9d8d7;
+  display: flex;
+  justify-content: space-between;
+  box-sizing: border-box;
+
+  .logo {
+    width: 90px;
+    height: auto;
     display: flex;
-    justify-content : space-between;
-    box-sizing: border-box;
+    align-items: center;
 
-    .logo {
-        width: 90px;
-        height: auto;
-        display: flex;
-        align-items: center;
-
-        img {
-            width: 100%;
-            height: 100%;
-        }
+    img {
+      width: 100%;
+      height: 100%;
     }
-    .connectButton {
-        display: flex;
-        width: 200px;
-        align-items: center;
-        justify-content: center;
-        border-left: 1px solid #d9d8d7;
+  }
+  .connectButton {
+    display: flex;
+    width: 200px;
+    align-items: center;
+    justify-content: center;
 
-        .burger {
-            cursor: pointer;
-        }
+    .burger {
+      cursor: pointer;
     }
+  }
 }

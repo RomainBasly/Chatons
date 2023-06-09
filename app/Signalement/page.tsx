@@ -1,30 +1,42 @@
-import dynamic from "next/dynamic";
 import React from "react";
 import { DefaultTemplate } from "../../src/front/Components/DefaultTemplate";
-import Button from "../../src/front/Components/Materials/buttons";
+import Button, {
+  EButtonVariant,
+} from "../../src/front/Components/Materials/buttons";
 import classes from "./classes.module.scss";
 import TextContent from "../../src/front/Components/TextContent/dictionnary.json";
-
-const Map = dynamic(
-  () => import("../../src/front/Components/Elements/MapOpenStreetMap"),
-  { ssr: false }
-);
+import Link from "next/link";
 
 const Page: React.FC = () => {
   return (
-    <div className={classes["roota"]}>
-      <DefaultTemplate title={"Signaler un chat blessé ou gravement malade"}>
-        <div className={classes["contenta"]}>
-          <h3>{TextContent.pages.signalement.title}</h3>
-
-          <p>{TextContent.pages.signalement.fakeContent}</p>
+    <DefaultTemplate title={TextContent.pages.signalementIntro.title}>
+      <div className={classes["roota"]}>
+        <div className={classes["content"]}>
+          <h3>{TextContent.pages.signalementIntro.subtitle}</h3>
+          <p>{TextContent.pages.signalementIntro.prérequis}</p>
+          <ul>
+            {TextContent.pages.signalementIntro.indications.map(
+              (indication) => {
+                return <li key={indication.id}>{indication.indication}</li>;
+              }
+            )}
+          </ul>
+          <p>{TextContent.pages.signalementIntro.fakeContent}</p>
         </div>
-        <Map />
-        <Button variant="submit">
-          {TextContent.pages.signalement.textButton}
-        </Button>
-      </DefaultTemplate>
-    </div>
+        <div className={classes["buttons-container"]}>
+          <Link href={"/"}>
+            <Button variant={EButtonVariant.SECONDARY} size="xsmall">
+              {TextContent.common.buttons.retour}
+            </Button>
+          </Link>
+          <Link href={"signalement/Form"}>
+            <Button variant={EButtonVariant.PRIMARY}>
+              {TextContent.common.buttons.suivant}
+            </Button>
+          </Link>
+        </div>
+      </div>
+    </DefaultTemplate>
   );
 };
 
