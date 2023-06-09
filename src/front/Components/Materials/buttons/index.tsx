@@ -54,6 +54,7 @@ const Button: React.FC<IProps> = (props: IProps) => {
         onClick={onClick}
         className={classNames([classes["root"], className])}
       >
+        <>{console.log(props)}</>
         {icon && iconPosition === "left" && (
           <Image src={icon} alt={"button icon"} />
         )}

@@ -29,7 +29,7 @@ const Page: React.FC = () => {
               {TextContent.common.buttons.retour}
             </Button>
           </Link>
-          <Link href={"signalement/Form"}>
+          <Link href={"Signalement/Form"}>
             <Button variant={EButtonVariant.PRIMARY}>
               {TextContent.common.buttons.suivant}
             </Button>
