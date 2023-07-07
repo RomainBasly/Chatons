@@ -2,10 +2,8 @@ import React, { ReactNode } from "react";
 import { Inter } from "next/font/google";
 import classes from "./classes.module.scss";
 
-import { Header } from "../../front/Components/Elements/Header";
-import Footer from "../Components/Elements/Footer/Footer";
-
-const inter = Inter({ subsets: ["latin"] });
+import { Header } from "../../Elements/Header";
+import Footer from "../../Elements/Footer/Footer";
 
 interface IProps {
   title?: string;

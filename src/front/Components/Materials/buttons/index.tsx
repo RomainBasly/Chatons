@@ -1,43 +1,38 @@
-import classNames from "classnames";
-import React, { ReactNode } from "react";
-import classes from "./classes.module.scss";
-import Image from "next/image";
-
-export enum EButtonVariant {
-  PRIMARY = "primary",
-  SECONDARY = "secondary",
-  TERTIARY = "tertiary",
-}
+import classNames from 'classnames'
+import React, { ReactNode } from 'react'
+import classes from './classes.module.scss'
+import Image from 'next/image'
+import { EButtonIconPosition, EButtonVariant } from '../../Elements/enums'
 
 type IProps = {
-  children: React.ReactNode;
-  onClick?: () => void;
-  type?: "button" | "submit";
-  fullwidth?: boolean;
-  disabled?: boolean;
-  icon?: string;
-  variant?: EButtonVariant;
-  color?: "main" | "neutral" | "disabled";
-  size?: "medium" | "large" | "small" | "xsmall";
-  startIcon?: React.ReactNode;
-  className?: string;
-  iconPosition?: string;
-};
+  children: React.ReactNode
+  onClick?: () => void
+  type?: 'button' | 'submit'
+  fullwidth?: boolean
+  disabled?: boolean
+  icon?: string
+  variant?: EButtonVariant
+  color?: 'main' | 'neutral' | 'disabled'
+  size?: 'medium' | 'large' | 'small' | 'xsmall'
+  startIcon?: React.ReactNode
+  className?: string
+  iconPosition?: EButtonIconPosition
+}
 
 const Button: React.FC<IProps> = (props: IProps) => {
   let {
-    children = "defaultButton",
+    children = 'defaultButton',
     onClick,
-    type = "button",
-    fullwidth = "false",
+    type = 'button',
+    fullwidth = 'false',
     disabled = false,
     variant = EButtonVariant.PRIMARY,
-    className = "",
+    className = '',
     icon,
     iconPosition,
-  } = props;
+  } = props
 
-  const fullwidthattr = fullwidth.toString();
+  const fullwidthattr = fullwidth.toString()
   const attributes = {
     ...props,
     variant,
@@ -45,26 +40,25 @@ const Button: React.FC<IProps> = (props: IProps) => {
     fullwidth,
     type,
     fullwidthattr,
-  };
+  }
 
   return (
-    <div className={classes["root"]}>
+    <div className={classes['root']}>
       <button
         {...attributes}
         onClick={onClick}
-        className={classNames([classes["root"], className])}
+        className={classNames([classes['root'], className])}
       >
-        <>{console.log(props)}</>
-        {icon && iconPosition === "left" && (
-          <Image src={icon} alt={"button icon"} />
+        {icon && iconPosition === EButtonIconPosition.LEFT && (
+          <Image src={icon} alt={'button icon'} />
         )}
-        {children}
-        {icon && iconPosition === "right" && (
-          <Image src={icon} alt={"button icon"} />
+        <div className={classes['children']}>{children}</div>
+        {icon && iconPosition === EButtonIconPosition.RIGHT && (
+          <Image src={icon} alt={'button icon'} />
         )}
       </button>
     </div>
-  );
-};
+  )
+}
 
-export default Button;
+export default Button

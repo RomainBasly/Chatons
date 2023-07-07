@@ -6,7 +6,25 @@
   min-width: 160px;
   margin: 8px;
 
+  &:hover {
+    transform: translateX(-2px) translateY(-2px);
+    transition: 0.5s;
+  }
+
+  button {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+
+    img {
+      margin-left: 10px;
+      margin-right: 10px;
+      filter: invert(80%) saturate(50000%);
+    }
+  }
+
   &[variant="primary"] {
+    display: flex;
     background-color: #356c99;
     color: white;
     padding: 16px 14px;
@@ -14,14 +32,27 @@
     &:hover {
       background-color: #0e6dac;
       color: white;
+      box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.3);
+
+      img {
+        filter: invert(100%) saturate(10000%);
+      }
     }
   }
+
   &[variant="secondary"] {
+    display: flex;
     border: 1px solid #d9d8d7;
-    padding: 16px 14px;
+    padding: 16px 20px;
+    align-items: center;
 
     &:hover {
       background-color: #f9f7f5;
+      box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.3);
+
+      img {
+        filter: invert(20%) saturate(10000%);
+      }
     }
   }
 }
