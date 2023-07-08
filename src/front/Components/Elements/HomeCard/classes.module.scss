@@ -1,15 +1,12 @@
 .root {
   min-width: 200px;
   min-height: 200px;
-  max-width: 300px;
-  max-height: 300px;
   border-radius: 8px;
   border: 1px solid grey;
   display: flex;
   align-items: center;
-  background-color: #f8f9fa;
+  background-color: white;
   cursor: pointer;
-  width: 100%;
   text-decoration: none;
   color: black;
 
@@ -35,4 +32,9 @@
       padding-top: 10px;
     }
   }
+
+  @media (max-width: 1000px) {
+    margin-top: 30px;
+  }
+
 }

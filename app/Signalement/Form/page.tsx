@@ -7,7 +7,7 @@ import { DefaultTemplate } from "../../../src/front/Components/Materials/Templat
 
 interface IProps {}
 
-const Map = dynamic(
+const OpenStreetMap = dynamic(
   () => import("../../../src/front/Components/Elements/MapOpenStreetMap"),
   { ssr: false }
 );
@@ -36,7 +36,7 @@ const Form: React.FC<IProps> = () => {
               </div>
             ))}
           </div>
-          <Map />
+          <OpenStreetMap />
         </form>
       </div>
     </DefaultTemplate>

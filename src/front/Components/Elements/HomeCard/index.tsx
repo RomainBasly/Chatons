@@ -24,16 +24,14 @@ export const HomeCard: React.FC<IProps> = (props) => {
 
   useEffect(() => {
     const newPicto = getPicto(title)
-    console.log('picto', newPicto)
     setPicto(newPicto)
-    console.log('picto use Effect', picto)
   }, [title])
 
   const getPicto = (title: string) => {
     switch (title) {
       case 'Signalement':
         return paw
-      case 'Location':
+      case 'Localiser':
         return location
       default:
         return

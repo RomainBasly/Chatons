@@ -7,17 +7,17 @@
   },
   "pages": {
     "landingPage": {
-      "title": "Bienvenue sur le site d'entraide féline",
+      "title": "Bienvenue sur le site d'entraide pour la protection des félins",
       "cards": [
         {
           "id": 1,
           "title": "Signalement",
           "description": "Lancer un SOS",
-          "linkUrl": "/signalement"
+          "linkUrl": "/Signalement"
         },
         {
           "id": 2,
-          "title": "Location",
+          "title": "Localiser",
           "description": "Consulter les SOS",
           "linkUrl": "/consulter"
         }
