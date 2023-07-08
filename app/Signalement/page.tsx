@@ -1,11 +1,10 @@
 import React from "react";
-import { DefaultTemplate } from "../../src/front/Components/DefaultTemplate";
-import Button, {
-  EButtonVariant,
-} from "../../src/front/Components/Materials/buttons";
+import { DefaultTemplate } from "../../src/front/Components/Materials/Template/DefaultTemplate";
+import Button from "../../src/front/Components/Materials/buttons";
 import classes from "./classes.module.scss";
 import TextContent from "../../src/front/Components/TextContent/dictionnary.json";
 import Link from "next/link";
+import { EButtonVariant } from "../../src/front/Components/Elements/enums";
 
 const Page: React.FC = () => {
   return (

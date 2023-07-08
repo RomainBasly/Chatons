@@ -1,4 +1,5 @@
 import React from "react";
+import classes from "./classes.module.scss";
 
 export default function RootLayout({
   children,
@@ -6,8 +7,8 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en">
-      <body>{children}</body>
+    <html lang="fr">
+      <body className={classes["root"]}>{children}</body>
     </html>
   );
 }

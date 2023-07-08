@@ -3,7 +3,7 @@ import dynamic from "next/dynamic";
 
 import classes from "./classes.module.scss";
 import TextContent from "../../../src/front/Components/TextContent/dictionnary.json";
-import { DefaultTemplate } from "../../../src/front/Components/DefaultTemplate";
+import { DefaultTemplate } from "../../../src/front/Components/Materials/Template/DefaultTemplate";
 
 interface IProps {}
 
@@ -20,7 +20,7 @@ const Form: React.FC<IProps> = () => {
           <div className={classes["catSituation"]}>
             <h3>{TextContent.pages.form.catSituation}</h3>
             {TextContent.pages.form.catSituationLabels.map((situation) => (
-              <div className={classes["checkboxContainer"]}>
+              <div className={classes["checkboxContainer"]} key={situation.id}>
                 <label
                   htmlFor={situation.shortLabel}
                   className={classes["label"]}
