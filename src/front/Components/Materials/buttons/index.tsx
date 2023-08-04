@@ -1,5 +1,5 @@
 import classNames from 'classnames'
-import React, { ReactNode } from 'react'
+import React from 'react'
 import classes from './classes.module.scss'
 import Image from 'next/image'
 import { EButtonIconPosition, EButtonVariant } from '../../Elements/enums'
