@@ -1,40 +1,44 @@
 .root {
-  min-width: 200px;
-  min-height: 200px;
   border-radius: 8px;
   border: 1px solid grey;
   display: flex;
   align-items: center;
   background-color: white;
-  cursor: pointer;
   text-decoration: none;
   color: black;
+  flex-direction: column;
+  width: 100%;
+  margin: 20px;
+  max-width: 450px;
 
   .illustration {
     display: flex;
-    height: 50px;
     width: auto;
-    margin-left: 5px;
     align-self: center;
-    padding: 20px;
+    padding-top: 20px;
+
+    img {
+      display: flex;
+      height: 70px;
+      width: 70px;
+    }
   }
   .description {
     display: flex;
     flex-direction: column;
     text-align: center;
-
     padding: 20px;
 
-    .infoContainer {
-      width: 20px;
-      height: auto;
+    .buttonContainer {
+      display: flex;
       align-self: center;
+      justify-content: center;
       padding-top: 10px;
+      width: 100%;
     }
   }
 
   @media (max-width: 1000px) {
     margin-top: 30px;
   }
-
 }

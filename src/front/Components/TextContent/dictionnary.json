@@ -11,21 +11,23 @@
       "cards": [
         {
           "id": 1,
-          "title": "Signalement",
-          "description": "Lancer un SOS",
+          "title": "Vous avez trouvé un chat en détresse",
+          "description": "Un chat gravement malade ou blessé, un chaton abandonné, une chatte libre non stérilisée",
+          "textButton": "Signaler un chat",
           "linkUrl": "/Signalement"
         },
         {
           "id": 2,
-          "title": "Localiser",
-          "description": "Consulter les SOS",
+          "title": "Prendre en charge un chat en détresse",
+          "description": "Vous avez une expérience dans le trappage et vous pouvez prendre en charge un chat en détresse",
+          "textButton": "Consulter les signalements",
           "linkUrl": "/consulter"
         }
       ]
     },
     "signalementIntro": {
       "title": "Signaler un chat",
-      "subtitle": "A lire avant d'effectuer un signalement de chat",
+      "subtitle": "Signaler un chat en détresse",
       "content": "Cette page sert à signaler les chats en situation de détresse (gravement malades ou blessés) pour une prise en charge éventuelle de la part d'associations de votre quartier. De la qualité des informations que vous transmettrez dépendra la survie du chat que vous signalez. Les chats suivants sont concernés:- les chats gravements blessés - Les chats en mauvaise santé et dont la vie est en danger: Par exemple: les chats sales, chats qui saignent, chats avec un membre cassé, chats immobiles, chats qui bavent, chats qui ont du mal à respirer. - les chats qui ont été déclarés perdus par leur propriétaire; - les chattes qui viennent de mettre bas dans la nature ou la présence de chatons sur la voie publique dont vous êtes certains qu'ils n'ont pas de foyer;",
       "fakeContent": "iLorem ipsum dolor sit amet consectetur adipisicing elit. Vero ullam saepe libero modi quod quibusdam. Ratione repellat laboriosam in eius laborum natus doloremque excepturi similique quia? Nesciunt, dolore cumque! Architecto?",
       "certify": "Vous certifiez en créant un formulaire que: ",

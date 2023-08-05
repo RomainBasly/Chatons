@@ -1,12 +1,15 @@
 import React, { useEffect, useState } from 'react'
 import classes from './classes.module.scss'
-import paw from '../../../Assets/cat-paw.svg'
+import sos from '../../../Assets/emergency-call.svg'
 import location from '../../../Assets/location.svg'
-import info from '../../../Assets/info.svg'
+import Button from '../../Materials/buttons'
+import { EButtonVariant } from '../enums'
 
 interface IProps {
-  textDescription: string
+  id: number
   title: string
+  textDescription: string
+  textButton: string
   className?: string
 }
 
@@ -19,19 +22,19 @@ interface ImageObject {
 }
 
 export const HomeCard: React.FC<IProps> = (props) => {
-  const { title, textDescription } = props
+  const { title, textDescription, textButton, id } = props
   const [picto, setPicto] = useState<ImageObject | null>()
 
   useEffect(() => {
-    const newPicto = getPicto(title)
+    const newPicto = getPicto(id)
     setPicto(newPicto)
   }, [title])
 
-  const getPicto = (title: string) => {
-    switch (title) {
-      case 'Signalement':
-        return paw
-      case 'Localiser':
+  const getPicto = (id: number) => {
+    switch (id) {
+      case 1:
+        return sos
+      case 2:
         return location
       default:
         return
@@ -45,9 +48,11 @@ export const HomeCard: React.FC<IProps> = (props) => {
       </div>
       <div className={classes['description']}>
         <h3>{title}</h3>
-        {textDescription}
-        <div className={classes['infoContainer']}>
-          <img src={String(info.src)} alt="info picto" />
+        <div className={classes['text']}>{textDescription}</div>
+        <div className={classes['buttonContainer']}>
+          <Button variant={EButtonVariant.PRIMARY} size="xsmall">
+            {textButton}
+          </Button>
         </div>
       </div>
     </div>
